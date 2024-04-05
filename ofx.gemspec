@@ -28,6 +28,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'nokogiri', '>= 1.16.3'
   s.add_development_dependency 'byebug', '~> 11.1.3'
-  s.add_development_dependency 'rake', '~> 13.1.0'
+  s.add_development_dependency 'rake', '~> 13.2.1'
   s.add_development_dependency 'rspec', '~> 3.10'
 end
