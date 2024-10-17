@@ -1,3 +1,5 @@
 module OFX
-  class UnsupportedFileError < StandardError; end
+  class Errors < StandardError; end
+  class UnsupportedFileError < Errors; end
+  class InvalidFileHeader < Errors; end
 end
