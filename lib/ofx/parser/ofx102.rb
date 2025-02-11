@@ -131,7 +131,7 @@ module OFX
                                memo: element.search('memo').inner_text,
                                name: element.search('name').inner_text,
                                payee: element.search('payee').inner_text,
-                               check_number: element.search('checknum').inner_text,
+                               check_number: build_check_number(element),
                                ref_number: element.search('refnum').inner_text,
                                posted_at: build_date(element.search('dtposted').inner_text),
                                occurred_at: occurred_at,
@@ -194,6 +194,13 @@ module OFX
                              posted_at: build_date(node.search('availbal > dtasof').inner_text)
                            })
         end
+      end
+
+      def build_check_number(element)
+        check_number = element.search('checknum').inner_text
+        return check_number unless check_number.empty?
+
+        element.search('chknum').inner_text
       end
 
       def to_decimal(amount)

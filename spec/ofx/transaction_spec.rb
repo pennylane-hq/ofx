@@ -217,4 +217,23 @@ describe OFX::Transaction do
       expect(@parser.account.transactions[0].amount_in_pennies).to eql 0
     end
   end
+
+  context "check number with noncompliant formats" do
+    context "when CHKNUM" do
+      it "should set the check number" do
+        transaction = @account.transactions.find { |t| t.memo == "VERY BAD CHECKNUM FORMAT" }
+        expect(transaction.check_number).to eql "696969"
+      end
+
+      it "should set the check number from CHECKNUM if both present" do
+        transaction = @account.transactions.find { |t| t.memo == "BAD BUT SAVABLE CHECKNUM FORMAT" }
+        expect(transaction.check_number).to eql "232323"
+      end
+
+      it "it should skip single tag CHKNUM derivatives (not CHKRANGE)" do
+        transaction = @account.transactions.find { |t| t.memo == "ALSO BAD CHECKNUM FORMAT" }
+        expect(transaction.check_number).to eql ""
+      end
+    end
+  end
 end
