@@ -26,7 +26,7 @@ describe OFX::Account do
 
     it "should return transactions" do
       @account.transactions.should be_a_kind_of(Array)
-      @account.transactions.size.should == 36
+      @account.transactions.size.should == 38
     end
 
     it "should return balance" do

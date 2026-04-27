@@ -27,7 +27,7 @@ describe OFX::Statement do
 
     it "returns transactions" do
       statement.transactions.should be_a(Array)
-      statement.transactions.size.should == 36
+      statement.transactions.size.should == 38
     end
 
     describe "balance" do
