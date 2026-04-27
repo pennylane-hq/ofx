@@ -24,8 +24,10 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.licenses      = ['MIT']
 
-  s.required_ruby_version = ">= 3.0.0"
+  s.required_ruby_version = ">= 3.3.0"
 
+  s.add_dependency 'bigdecimal'
+  s.add_dependency 'nkf'
   s.add_dependency 'nokogiri', '>= 1.16.3'
   s.add_development_dependency 'byebug', '~> 11.1.3'
   s.add_development_dependency 'rake', '~> 13.2.1'
