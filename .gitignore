@@ -3,3 +3,5 @@
 pkg
 Gemfile.lock
 .byebug_history
+/doc/*
+!/doc/dependency_decisions.yml
