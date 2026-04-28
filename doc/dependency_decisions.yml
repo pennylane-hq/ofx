@@ -4,34 +4,16 @@
   - :who:
     :why:
     :versions: []
-    :when: 2026-04-28 11:46:56.925393000 Z
+    :when: 2026-04-28 13:02:26.508014000 Z
 - - :permit
   - Simplified BSD
   - :who:
     :why:
     :versions: []
-    :when: 2026-04-28 11:46:57.523411000 Z
+    :when: 2026-04-28 13:02:27.087052000 Z
 - - :permit
   - ruby
   - :who:
     :why:
     :versions: []
-    :when: 2026-04-28 11:46:58.026018000 Z
-- - :permit
-  - Artistic-2.0
-  - :who:
-    :why:
-    :versions: []
-    :when: 2026-04-28 11:46:58.536318000 Z
-- - :permit
-  - GPL-2.0-or-later
-  - :who:
-    :why:
-    :versions: []
-    :when: 2026-04-28 11:46:59.254571000 Z
-- - :permit
-  - Apache 2.0
-  - :who:
-    :why:
-    :versions: []
-    :when: 2026-04-28 11:46:59.757290000 Z
+    :when: 2026-04-28 13:02:27.532935000 Z
