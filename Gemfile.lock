@@ -28,7 +28,7 @@ GEM
       xml-simple (~> 1.1.9)
     lint_roller (1.1.0)
     mini_portile2 (2.8.9)
-    nkf (0.2.0)
+    nkf (0.3.0)
     nokogiri (1.19.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
