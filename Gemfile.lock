@@ -16,7 +16,7 @@ GEM
     csv (3.3.5)
     diff-lcs (1.5.1)
     io-console (0.8.2)
-    json (2.19.4)
+    json (2.19.9)
     language_server-protocol (3.17.0.5)
     license_finder (7.2.1)
       bundler
